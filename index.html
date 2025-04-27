@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Discord Chat</title>
+    <link rel="stylesheet" href="link.css">
+</head>
+<body>
+    <div class="server-bar">
+        <div class="server">🎮</div>
+        <div class="server">💬</div>
+        <div class="server">🎵</div>
+    </div>
+
+    <div class="main">
+        <div class="channel-bar">
+            <h2># general</h2>
+        </div>
+        
+        <div class="chat-box" id="chat-box">
+            <!-- Messages will appear here -->
+        </div>
+
+        <div class="message-bar">
+            <input type="text" id="message-input" placeholder="Type a message...">
+            <input type="text" id="message-input" placeholder="Send file...">
+<input type="file" id="file-input">
+<button onclick="sendMessage()">Send</button>
+
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        height: 100vh;
+        background-color: #36393f;
+        color: white;
+    }
+    
+    .server-bar {
+        width: 70px;
+        background-color: #202225;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+    
+    .server {
+        width: 50px;
+        height: 50px;
+        background-color: #5865f2;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    .main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .channel-bar {
+        background-color: #2f3136;
+        padding: 15px;
+        border-bottom: 1px solid #202225;
+    }
+    
+    .chat-box {
+        flex: 1;
+        padding: 20px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .message-bar {
+        display: flex;
+        padding: 10px;
+        background-color: #40444b;
+    }
+    
+    #message-input {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        font-size: 16px;
+    }
+    
+    button {
+        background-color: #5865f2;
+        color: white;
+        border: none;
+        padding: 0 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    <script src="link.js"></script>
+</body>
+</html>
